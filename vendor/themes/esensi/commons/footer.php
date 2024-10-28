@@ -41,7 +41,7 @@
 
 <?php $this->load->view($folder_themes .'/commons/back_to_top') ?>
 
-<footer class="container mx-auto lg:px-5 px-3 pt-5 footer">
+<footer class="max-w-screen-xl md:px-8 lg:px-10 mx-auto">
     <div class="bg-zinc-700 text-white py-5 px-5 rounded-t-xl text-sm flex flex-col gap-3 lg:flex-row justify-between items-center text-center lg:text-left">
         <span class="space-y-2">
             <p>Hak cipta situs &copy; <?= date('Y') ?> - <?= NAMA_DESA ?></p>

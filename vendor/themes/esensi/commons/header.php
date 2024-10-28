@@ -2,7 +2,7 @@
 
 <?php $bg_header = $latar_website ?>
 
-<div class="container md:px-4 lg:px-5">
+<div class="max-w-screen-xl md:px-8 lg:px-10 mx-auto">
   <header style="background-image: url(<?= $bg_header ?>);" class="bg-center bg-cover bg-no-repeat relative text-white">
     <div class="absolute bg-gray-800 bg-opacity-60 top-0 left-0 right-0 h-full">
     </div>
@@ -12,7 +12,7 @@
     <section class="relative z-10 text-center space-y-2 mt-3 px-3 lg:px-5">
       <a href="<?= site_url() ?>">
         <figure>
-          <img src="<?= gambar_desa($desa['logo']) ?>" alt="Logo <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?>" class="h-16 mx-auto pb-2">
+          <img src="<?= gambar_desa($desa['logo']) ?>" alt="Logo <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?>" class="h-30 mx-auto pb-2">
         </figure>
         <span class="text-h2 block"><?= NAMA_DESA ?></span>
         <p><?= ucfirst($this->setting->sebutan_kecamatan_singkat) ?>
@@ -25,7 +25,7 @@
       </a>
       <?php if($w_gal) : ?>
         <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="4" class="block w-10/12 lg:w-1/4 mx-auto">
-          <div class="grid grid-flow-col gap-3 shadow-lg pt-2">
+          <div class="grid grid-flow-col gap-5 shadow-lg pt-2">
             <?php foreach($w_gal as $album) : ?>
               <?php if(is_file(LOKASI_GALERI . 'kecil_' . $album['gambar'])) : ?>
                 <?php $link = site_url('first/sub_gallery/'.$album['id']) ?>
