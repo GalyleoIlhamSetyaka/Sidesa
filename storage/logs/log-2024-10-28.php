@@ -74,3 +74,8 @@ Stack trace:
 #19 C:\xampp\htdocs\sidesa\index.php(284): require_once('C:\\xampp\\htdocs...')
 #20 {main}
 ERROR - 2024-10-28 04:37:31 --> 404 Page Not Found: 
+ERROR - 2024-10-28 11:33:43 --> Severity: error --> Exception: Call to a member function lokasi_latar_website() on null C:\xampp\htdocs\sidesa\donjo-app\models\Setting_model.php 170
+ERROR - 2024-10-28 11:34:50 --> Sudut rotasi diperlukan untuk memutar gambar.
+ERROR - 2024-10-28 11:34:50 --> Sudut rotasi diperlukan untuk memutar gambar.
+ERROR - 2024-10-28 11:35:03 --> Sudut rotasi diperlukan untuk memutar gambar.
+ERROR - 2024-10-28 11:35:03 --> Sudut rotasi diperlukan untuk memutar gambar.
