@@ -57,7 +57,7 @@
 
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                            <thead class="bg-gray">
+                            <thead class="">
                                 <tr>
                                     <th class="padat"><input type="checkbox" id="checkall" /></th>
                                     <th class="padat">No</th>

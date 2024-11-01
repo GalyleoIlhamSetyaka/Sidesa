@@ -52,7 +52,7 @@
 									<h5 class="box-title">DAFTAR ANGGOTA</h5>
 									<div class="table-responsive">
 										<table class="table table-bordered table-striped table-hover ">
-											<thead class="bg-gray color-palette">
+											<thead class=" color-palette">
 												<tr>
 													<th>NO</th>
 													<th>NIK</th>
@@ -82,7 +82,7 @@
 								<div class="col-sm-12">
 									<div class="table-responsive">
 										<table class="table table-bordered table-striped table-hover ">
-											<thead class="bg-gray color-palette">
+											<thead class=" color-palette">
 												<tr>
 													<th>No</th>
 													<th width="45%">Pertanyaan / Indikator</th>

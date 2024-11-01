@@ -55,7 +55,7 @@
             <div class="box-body">
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped dataTable table-hover tabel-daftar" id="tabel-pelapak">
-                        <thead class="bg-gray disabled color-palette">
+                        <thead class=" disabled color-palette">
                             <tr>
                                 <th><input type="checkbox" id="checkall" /></th>
                                 <th>No</th>

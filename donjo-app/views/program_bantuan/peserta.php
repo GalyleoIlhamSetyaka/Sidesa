@@ -36,7 +36,7 @@
 				<h5><b>Program Bantuan Yang Pernah Diikuti</b></h5>
 				<div class="table-responsive">
 					<table class="table table-bordered dataTable table-hover tabel-daftar">
-						<thead class="bg-gray disabled color-palette">
+						<thead class=" disabled color-palette">
 							<tr>
 								<th class="padat">No</th>
 								<th width="15%">Waktu/Tanggal</th>

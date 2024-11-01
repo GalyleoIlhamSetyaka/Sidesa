@@ -76,7 +76,7 @@
 													<input type="hidden" class="bobot" name="bobot[]"></input>
 													<div class="table-responsive">
 														<table class="table table-bordered table-striped dataTable table-hover">
-															<thead class="bg-gray disabled color-palette">
+															<thead class=" disabled color-palette">
 																<tr>
 																	<th>Kode</th>
 																	<th>Jawaban</th>

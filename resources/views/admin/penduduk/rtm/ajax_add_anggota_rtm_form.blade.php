@@ -9,7 +9,7 @@
             </div>
             <div class="table-responsive">
                 <table id="keluarga" class="table table-bordered dataTable table-hover nowrap" style="display:none;">
-                    <thead class="bg-gray disabled color-palette">
+                    <thead class=" disabled color-palette">
                         <tr>
                             <th>#</th>
                             <th>No</th>

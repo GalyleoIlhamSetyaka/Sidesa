@@ -49,7 +49,7 @@
                             {{ $point['nama'] }}
                         </h5>
                         <table class="table table-bordered dataTable table-hover" id="tabeldata">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <th class="padat"><input type="checkbox" id="checkall" /></th>
                                     <th class="padat">No</th>

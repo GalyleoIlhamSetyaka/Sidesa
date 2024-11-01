@@ -15,7 +15,7 @@
     <div class="col-sm-12">
         <div class="table-responsive" id="tabel_program">
             <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                <thead class="bg-gray disabled color-palette">
+                <thead class=" disabled color-palette">
                     <tr>
                         <td>Jenis Program</td>
                         <td>Kepesertaan</td>

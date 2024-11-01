@@ -54,7 +54,7 @@
 					<label for="nama">Status Kepemilikan Identitas</label>
 					<div class="table-responsive">
 						<table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-							<thead class="bg-gray disabled color-palette">
+							<thead class=" disabled color-palette">
 								<tr>
 									<th width='25%'>Wajib Identitas</th>
 									<th>Identitas Elektronik</th>

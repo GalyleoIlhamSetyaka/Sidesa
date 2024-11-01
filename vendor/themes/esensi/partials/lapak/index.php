@@ -34,13 +34,13 @@
               <?php for ($i = 0; $i < $this->setting->banyak_foto_tiap_produk; $i++): ?>
                 <?php if ($foto[$i]): ?>
                   <?php if (is_file(LOKASI_PRODUK . $foto[$i])): ?>
-                    <img src="<?= base_url(LOKASI_PRODUK . $foto[$i]); ?>" alt="Foto <?= ($i+1); ?>" class="h-44 w-full object-cover object-center bg-gray-300">
+                    <img src="<?= base_url(LOKASI_PRODUK . $foto[$i]); ?>" alt="Foto <?= ($i+1); ?>" class="h-44 w-full object-cover object-center -300">
                   <?php endif; ?>
                 <?php endif; ?>
               <?php endfor; ?>
             </div>
             <?php else: ?>
-              <img class="h-44 w-full object-cover object-center bg-gray-300" src="<?= asset('images/404-image-not-found.jpg') ?>" alt="Foto Produk"/>
+              <img class="h-44 w-full object-cover object-center -300" src="<?= asset('images/404-image-not-found.jpg') ?>" alt="Foto Produk"/>
           <?php endif ?>
           <div class="space-y-1/2 text-sm flex flex-col detail">
             <span class="font-heading font-medium"><?= $pro->nama ?></span>

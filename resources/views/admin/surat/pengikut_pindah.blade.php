@@ -7,7 +7,7 @@
         <div>
             <div class="table-responsive">
                 <table class="table table-bordered table-striped table-hover tabel-daftar">
-                    <thead class="bg-gray disabled color-palette">
+                    <thead class=" disabled color-palette">
                         <tr>
                             <th class="padat"><input type="checkbox" id="checkall" onclick="checkAll()" /></th>
                             <th class="padat">No</th>

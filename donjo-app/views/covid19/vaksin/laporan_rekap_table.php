@@ -1,6 +1,6 @@
 <div class="table-responsive">
 	<table id="tabel-data" class="table table-bordered dataTable table-striped table-hover tabel-daftar">
-		<thead class="bg-gray color-palette">
+		<thead class=" color-palette">
 			<tr>
 				<th rowspan="3">No</th>
 				<th rowspan="3"><?= ucwords(setting('sebutan_dusun')) ?></th>

@@ -26,7 +26,7 @@
 					<div class="dataTables_wrapper form-inline dt-bootstrap">
 						<div class="table-responsive">
 							<table id="tabelpermendagri" class="table table-bordered table-hover">
-								<thead class="bg-gray">
+								<thead class="">
 									<tr>
 										<th class="text-center" rowspan="3">No</th>
 										<th class="text-center" rowspan="3">Jenis Barang/Bangunan</th>

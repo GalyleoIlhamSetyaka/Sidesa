@@ -7,7 +7,7 @@
                         <div class="box-body">
                             <div class="table-responsive">
                                 <table id="tabel2" class="table table-bordered dataTable table-hover nowrap">
-                                    <thead class="bg-gray disabled color-palette">
+                                    <thead class=" disabled color-palette">
                                         <tr>
                                             <th>No</th>
                                             <th>NIK</th>

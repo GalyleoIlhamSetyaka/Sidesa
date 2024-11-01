@@ -63,7 +63,7 @@
                 <div class="col-md-6">
                     <div class="table-responsive">
                         <table class="table table-bordered dataTable table-striped table-hover tabel-daftar" id="tabel-data">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <th>No</th>
                                     <th>Pengguna</th>

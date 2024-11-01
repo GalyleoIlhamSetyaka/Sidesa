@@ -119,7 +119,7 @@
 				<div class="box-body">
 					<?php foreach ($komentar as $data) : ?>
 						<table class="table table-bordered table-striped dataTable table-hover">
-							<thead class="bg-gray disabled color-palette">
+							<thead class=" disabled color-palette">
 								<tr>
 									<th><i class="fa fa-comment"></i> <?= $data['owner'] ?></th>
 								</tr>

@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-xs-6">
-                                    <div class="small-box bg-gray">
+                                    <div class="small-box ">
                                         <div class="inner">
                                             <h3>{{ ribuan($tahun_ini) }}<sup style="font-size: 20px"></sup></h3>
                                             <p>Tahun Ini</p>
@@ -126,7 +126,7 @@
                                                 <!-- Tabel Data -->
                                                 <div class="table-responsive">
                                                     <table class="table table-bordered table-striped table-hover nowrap">
-                                                        <thead class="bg-gray">
+                                                        <thead class="">
                                                             <tr>
                                                                 <th class="text-center" width='5%'>No</th>
                                                                 <th class="text-center">{{ $main['lblx'] }}</th>
@@ -144,7 +144,7 @@
                                                                 </tr>
                                                             @endforeach
                                                         </tbody>
-                                                        <tfoot class="bg-gray disabled color-palette">
+                                                        <tfoot class=" disabled color-palette">
                                                             <tr>
                                                                 <th colspan="2" class="text-center">Total</th>
                                                                 <th class="text-center">{{ ribuan($main['Total']) }}</th>

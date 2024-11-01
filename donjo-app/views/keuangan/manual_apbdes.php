@@ -105,7 +105,7 @@ defined('BASEPATH') || exit('No direct script access allowed');
 				<form id="mainform" name="mainform" method="post">
 					<div class="table-responsive">
 						<table class="table table-bordered table-striped dataTable table-hover tabel-daftar" id="mydata">
-							<thead class="bg-gray disabled color-palette">
+							<thead class=" disabled color-palette">
 								<tr>
 									<th><input type="checkbox" id="checkall"/></th>
 									<th>No</th>

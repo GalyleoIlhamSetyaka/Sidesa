@@ -32,7 +32,7 @@
 												<input type="hidden" id="jml_error" value=<?= count($list_error ?? []) ?>>
 												<div class="table-responsive">
 													<table class="table table-bordered table-striped dataTable table-hover">
-														<thead class="bg-gray disabled color-palette">
+														<thead class=" disabled color-palette">
 															<tr>
 																<th>No</th>
 																<th>Error</th>

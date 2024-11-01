@@ -114,7 +114,7 @@
 
         @if (can('b', 'rumah-tangga'))
             <div class="col-lg-3 col-sm-6 col-xs-6">
-                <div class="small-box bg-gray">
+                <div class="small-box ">
                     <div class="inner">
                         <h3>{{ $rtm }}</h3>
                         <p>Rumah Tangga</p>

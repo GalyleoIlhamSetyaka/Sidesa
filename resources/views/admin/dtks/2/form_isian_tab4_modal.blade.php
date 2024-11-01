@@ -28,7 +28,7 @@
                         <input type="hidden" name='tipe_save' value='bagian4_demografi'>
                         <input type="hidden" name='id_art' value=''>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>
@@ -120,7 +120,7 @@
                         <input type="hidden" name='tipe_save' value='bagian4_pendidikan'>
                         <input type="hidden" name='id_art' value=''>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>
@@ -190,7 +190,7 @@
                         <input type="hidden" name='tipe_save' value='bagian4_ketenagakerjaan'>
                         <input type="hidden" name='id_art' value=''>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>
@@ -268,7 +268,7 @@
                         <input type="hidden" name='tipe_save' value='bagian4_kepemilikan_usaha'>
                         <input type="hidden" name='id_art' value=''>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>
@@ -376,7 +376,7 @@
                             ])
                         </div>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>
@@ -534,7 +534,7 @@
                         <input type="hidden" name='tipe_save' value='bagian4_program_perlindungan_sosial'>
                         <input type="hidden" name='id_art' value=''>
                         <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                            <thead class="bg-gray disabled color-palette">
+                            <thead class=" disabled color-palette">
                                 <tr>
                                     <td width="50%"></td>
                                     <td>Pilihan</td>

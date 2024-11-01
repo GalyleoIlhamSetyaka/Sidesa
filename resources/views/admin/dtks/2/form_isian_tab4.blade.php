@@ -3,7 +3,7 @@
         <div class="form-group">
             <div class="table-responsive">
                 <table class="table table-bordered table-hover" style="margin-bottom: 0px;" id="tabel_art_dtks">
-                    <thead class="bg-gray disabled color-palette">
+                    <thead class=" disabled color-palette">
                         <tr>
                             <th>Anggota Keluarga</th>
                             <th class="padat">Aksi</th>

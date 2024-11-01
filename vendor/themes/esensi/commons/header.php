@@ -4,7 +4,7 @@
 
 <div class="max-w-screen-xl md:px-8 lg:px-10 mx-auto">
   <header style="background-image: url(<?= $bg_header ?>);" class="bg-center bg-cover bg-no-repeat relative text-white">
-    <div class="absolute bg-gray-800 bg-opacity-60 top-0 left-0 right-0 h-full">
+    <div class="absolute -800 bg-opacity-60 top-0 left-0 right-0 h-full">
     </div>
     
     <?php $this->load->view($folder_themes .'/commons/category_menu') ?>

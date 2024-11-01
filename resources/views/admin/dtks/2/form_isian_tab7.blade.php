@@ -6,7 +6,7 @@
     <div class="col-sm-12">
         <div class="table-responsive" id="tabel_lampiran">
             <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                <thead class="bg-gray disabled color-palette">
+                <thead class=" disabled color-palette">
                     <tr>
                         <td>Aksi</td>
                         <td>Judul</td>

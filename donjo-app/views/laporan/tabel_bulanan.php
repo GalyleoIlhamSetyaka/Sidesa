@@ -3,7 +3,7 @@
 </style>
 <div class="table-responsive">
 	<table id="tfhover" class="table table-bordered table-hover tftable lap-bulanan">
-		<thead class="bg-gray">
+		<thead class="">
 			<tr>
 				<th rowspan="3" width='2%' class="text-center">No</th>
 				<th rowspan="3" colspan="2" width='30%' class="text-center">Perincian</th>

@@ -34,7 +34,7 @@
 										<div class="col-sm-12">
 											<div class="table-responsive">
 												<table id="tabel4" class="table table-bordered dataTable table-hover">
-													<thead class="bg-gray">
+													<thead class="">
 														<tr>
 															<th class="text-center">No</th>
 															<th class="text-center">Aksi</th>

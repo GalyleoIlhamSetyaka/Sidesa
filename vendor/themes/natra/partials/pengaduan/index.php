@@ -262,7 +262,7 @@
 	.bg-fuchsia,
 	.bg-purple,
 	.bg-maroon,
-	bg-gray,
+	,
 	bg-black,
 	.bg-red a,
 	.bg-yellow a,
@@ -278,7 +278,7 @@
 	.bg-fuchsia a,
 	.bg-purple a,
 	.bg-maroon a,
-	bg-gray a,
+	 a,
 	.bg-black a {
 		color: #f9f9f9 !important;
 	}
@@ -344,7 +344,7 @@
 		background-color: #85144b !important;
 	}
 
-	.bg-gray {
+	. {
 		background-color: #eaeaec !important;
 	}
 

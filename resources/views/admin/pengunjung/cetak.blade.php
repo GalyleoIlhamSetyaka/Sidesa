@@ -43,7 +43,7 @@
                             </tr>
                         @endforeach
                     </tbody>
-                    <tfoot class="bg-gray disabled color-palette">
+                    <tfoot class=" disabled color-palette">
                         <tr class="thick">
                             <th colspan="2" class="text-center">Total</th>
                             <th class="text-center">{{ ribuan($main['Total']) }}</th>

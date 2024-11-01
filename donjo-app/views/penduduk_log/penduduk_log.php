@@ -96,7 +96,7 @@
                                         <h5 class="box-title text-center"><b><?= $judul_statistik; ?></b></h5>
                                     <?php endif; ?>
                                     <table class="table table-bordered dataTable table-hover">
-                                        <thead class="bg-gray disabled color-palette">
+                                        <thead class=" disabled color-palette">
                                             <tr>
                                                 <th>No</th>
                                                 <th><input type="checkbox" id="checkall"/></th>

@@ -35,7 +35,7 @@
 					<h4 class="text-center"><strong>DAFTAR DATA SISKEUDES</strong></h4>
 					<div class="table-responsive">
 						<table class="table table-bordered table-striped dataTable table-hover nowrap">
-							<thead class="bg-gray disabled color-palette">
+							<thead class=" disabled color-palette">
 								<tr>
 									<th class="padat">No</th>
 									<?php if (can('h')): ?>

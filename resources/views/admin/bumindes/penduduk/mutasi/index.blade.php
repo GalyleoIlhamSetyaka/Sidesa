@@ -44,7 +44,7 @@
             <hr>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                    <thead class="bg-gray color-palette">
+                    <thead class=" color-palette">
                         <tr>
                             <th rowspan="2">Nomor Urut</th>
                             <th rowspan="2">Nama Lengkap / Panggilan</th>
@@ -85,7 +85,7 @@
                 </div>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover tabel-daftar" id="tabeldatahapus">
-                        <thead class="bg-gray color-palette">
+                        <thead class=" color-palette">
                             <tr>
                                 <th class="text-center">No</th>
                                 <th class="text-center">NIK</th>

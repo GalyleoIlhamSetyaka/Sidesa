@@ -1,9 +1,9 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <style>
 .width-full { width: max-content; }
-.nav-search { margin-left: auto; } /* This will push the search form to the right */
+.nav-search { margin-left: auto; }
 </style>
-<nav class="bg-primary-100 text-white hidden lg:block" role="navigation">
+<nav class="-900 text-white hidden lg:block" role="navigation">
   <ul class="flex items-center"> <!-- Use flex to align items in a row -->
     <li class="inline-block">
       <a href="<?= site_url() ?>" class="inline-block py-3 px-4 hover:bg-primary-200"><i class="fa fa-home"></i></a>

@@ -13,7 +13,7 @@
 					<div class="col-sm-12">
 						<div class="table-responsive">
 							<table id="tabel-tanahkasdesa" class="table table-bordered dataTable table-hover">
-								<thead class="bg-gray">
+								<thead class="">
 									<tr>
 										<th class="text-center">No</th>
 										<th width="120" class="text-center">Aksi</th>

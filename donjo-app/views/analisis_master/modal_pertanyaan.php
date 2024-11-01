@@ -31,7 +31,7 @@
 												<label class="control-label">Pilih pertanyaan yang akan disimpan pada tabel berikut</label>
 												<div class="table-responsive">
 													<table class="table table-bordered table-striped dataTable table-hover">
-														<thead class="bg-gray disabled color-palette">
+														<thead class=" disabled color-palette">
 															<tr>
 																<th><input type="checkbox" id="select-all-question" checked data-waschecked="true" /></th>
 																<th>NIK/KK</th>

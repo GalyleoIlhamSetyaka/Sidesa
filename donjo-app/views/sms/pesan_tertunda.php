@@ -27,7 +27,7 @@
 								<form id="mainform" name="mainform" method="post">
 									<div class="table-responsive">
 										<table class="table table-bordered table-striped table-hover tabel-daftar">
-											<thead class="bg-gray disabled color-palette">
+											<thead class=" disabled color-palette">
 												<tr>
 													<?php if (can('h')): ?>
 														<th><input type="checkbox" id="checkall"/></th>

@@ -121,7 +121,7 @@
 								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered table-striped dataTable table-hover tabel-daftar">
-										<thead class="bg-gray disabled color-palette">
+										<thead class=" disabled color-palette">
 											<tr>
 												<th>No</th>
 												<th>Aksi</th>

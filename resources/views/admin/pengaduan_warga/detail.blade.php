@@ -88,7 +88,7 @@
                 @endif
                 <!-- END timeline item -->
                 <li>
-                    <i class="fa fa-clock-o bg-gray"></i>
+                    <i class="fa fa-clock-o "></i>
                 </li>
             </ul>
         </div>

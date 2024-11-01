@@ -1,16 +1,16 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<aside class="space-y-50 sidebar">
+<aside class="space-y-50 sidebar ">
   <?php
     // Menentukan widget yang akan ditampilkan
     $widgets = [
-      'peta_wilayah_desa',
-      'peta_lokasi_kantor'
+      'peta_lokasi_kantor',
+      'peta_wilayah_desa'
     ];
   ?>
   
   <?php foreach($widgets as $widget) : ?>
-    <div class="shadow rounded-lg bg-white overflow-hidden">
+    <div class="shadow rounded-lg bg-white overflow-hidden mb-5 ">
       <?php
         $judul_widget = [
           // Menghilangkan underscore pada judul widget

@@ -33,7 +33,7 @@
         {!! form_open(null, 'id="mainform" name="mainform"') !!}
         <div class="table-responsive">
             <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                <thead class="bg-gray color-palette">
+                <thead class=" color-palette">
                     <tr>
                         <th><input type="checkbox" id="checkall" /></th>
                         <th>No</th>

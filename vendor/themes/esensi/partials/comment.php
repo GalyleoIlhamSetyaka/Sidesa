@@ -29,7 +29,7 @@
             <!-- List Komentar -->
             <?php foreach($comments as $comment) : ?>
               <div class="flex gap-x-3 py-4">
-                <div class="h-10 lg:h-12 lg:w-12 w-10 inline-flex items-center justify-center bg-gray-200 rounded-full flex-shrink-0 text-secondary-100"><i class="fa fa-comments text-lg"></i></div>
+                <div class="h-10 lg:h-12 lg:w-12 w-10 inline-flex items-center justify-center -200 rounded-full flex-shrink-0 text-secondary-100"><i class="fa fa-comments text-lg"></i></div>
                 <div class="space-y-2">
                   <blockquote class="italic">"<?= $comment['komentar'] ?></blockquote>
                   <div class="space-y-1 space-x-3 text-xs lg:text-sm">

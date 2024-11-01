@@ -29,7 +29,7 @@
             {!! form_open(null, 'id="mainform" name="mainform"') !!}
             <div class="table-responsive">
                 <table class="table table-bordered table-striped table-hover nowrap" id="tabeldata">
-                    <thead class="bg-gray disabled color-palette">
+                    <thead class=" disabled color-palette">
                         <tr>
                             <th rowspan="2"><input type="checkbox" id="checkall" /></th>
                             <th rowspan="2">No</th>

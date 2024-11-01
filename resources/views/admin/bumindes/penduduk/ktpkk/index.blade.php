@@ -50,7 +50,7 @@
         {!! form_open(null, 'id="mainform" name="mainform"') !!}
         <div class="table-responsive">
             <table class="table table-bordered table-hover tabel-daftar text-center" id="tabeldata">
-                <thead class="bg-gray color-palette">
+                <thead class=" color-palette">
                     <tr>
                         <th rowspan="2">Nomor Urut</th>
                         <th rowspan="2">No. KK</th>

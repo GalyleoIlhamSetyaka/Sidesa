@@ -28,7 +28,7 @@
         {!! form_open(null, 'id="mainform" name="mainform"') !!}
         <div class="table-responsive">
             <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                <thead class="bg-gray">
+                <thead class="">
                     <tr>
                         <th class="text-center">No</th>
                         <th width="120" class="text-center">Aksi</th>

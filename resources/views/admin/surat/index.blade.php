@@ -24,7 +24,7 @@
         <div class="box-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                    <thead class="bg-gray">
+                    <thead class="">
                         <tr>
                             <th class="padat">NO</th>
                             <th class="aksi">AKSI</th>

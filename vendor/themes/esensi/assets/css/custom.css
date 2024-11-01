@@ -1,8 +1,8 @@
 :root {
-  --primary-base-color: #008BA9;
-  --primary-darken-color: #006A82;
-  --secondary-base-color: #D08E0D;
-  --secondary-darken-color: #946200;
-  --accent-base-color: #00BA88;
-  --accent-darken-color: #00966D;
+  --primary-base-color: #1e3a8a;        /* Deep navy blue for strong contrast */
+  --primary-darken-color: #1c366b;      /* Darkened navy for headers or highlights */
+  --secondary-base-color: #ca8a04;      /* Warm golden yellow for accents */
+  --secondary-darken-color: #8b5e00;    /* Deep amber for focused highlights */
+  --accent-base-color: #10b981;         /* Fresh green for accents */
+  --accent-darken-color: #0e8d66;       /* Muted teal green for backgrounds */
 }

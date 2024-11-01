@@ -83,7 +83,7 @@
 
     <div class="table-responsive text-xs">
       <table class="table table-bordered table-striped dataTable table-hover">
-        <thead class="bg-gray color-palette">
+        <thead class=" color-palette">
           <tr>
             <th rowspan="2" class="padat">NO</th>
             <th rowspan="2">INDIKATOR IDM</th>

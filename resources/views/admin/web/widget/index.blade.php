@@ -54,7 +54,7 @@
                                             <div class="col-sm-12">
                                                 <div class="table-responsive">
                                                     <table class="table table-bordered table-hover" id="tabeldata">
-                                                        <thead class="bg-gray disabled color-palette">
+                                                        <thead class=" disabled color-palette">
                                                             <tr>
                                                                 <th>#</th>
                                                                 <th><input type="checkbox" id="checkall" /></th>

@@ -245,7 +245,7 @@
                             @endforeach
                             @if ($tampil_jumlah)
                     <tfoot>
-                        <tr class="bg-gray color-palette">
+                        <tr class=" color-palette">
                             <th class="padat" colspan="2">TOTAL</th>
                             <th class="padat">{{ show_zero_as($totals['WNA_L_AWAL'], '-') }}</th>
                             <th class="padat">{{ show_zero_as($totals['WNA_P_AWAL'], '-') }}</th>

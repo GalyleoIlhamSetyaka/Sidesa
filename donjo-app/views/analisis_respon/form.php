@@ -59,7 +59,7 @@
 										<?php if ($list_anggota) : ?>
 											<div class="table-responsive">
 												<table class="table table-bordered dataTable table-hover nowrap">
-													<thead class="bg-gray disabled color-palette">
+													<thead class=" disabled color-palette">
 														<tr>
 															<th>No</th>
 															<?php if ($analisis_master['id_child'] != 0) : ?>

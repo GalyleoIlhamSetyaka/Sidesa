@@ -133,7 +133,7 @@
 								<h5 class="box-title text-center"><b><?= $judul_statistik; ?></b></h5>
 							<?php endif; ?>
 							<table class="table table-bordered dataTable table-striped table-hover tabel-daftar">
-								<thead class="bg-gray disabled color-palette">
+								<thead class=" disabled color-palette">
 									<tr>
 										<th><input type="checkbox" id="checkall" <?= data_lengkap() ? '' : 'disabled' ?>/></th>
 										<th>No</th>

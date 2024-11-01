@@ -57,7 +57,7 @@
 										<?php $peserta = $program[1]; ?>
 										<div class="table-responsive">
 											<table class="table table-bordered table-striped dataTable table-hover tabel-daftar">
-												<thead class="bg-gray disabled color-palette">
+												<thead class=" disabled color-palette">
 													<tr>
 														<?php if (can('u')): ?>
 															<th rowspan="2" class="padat"><input type="checkbox" id="checkall"/></th>

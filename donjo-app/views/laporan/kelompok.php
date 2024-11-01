@@ -50,7 +50,7 @@
 							<?php endif; ?>
 							<div class="table-responsive">
 								<table class="table table-bordered table-striped table-hover nowrap">
-									<thead class="bg-gray">
+									<thead class="">
 										<tr>
 											<th rowspan="2" class="text-center"><?= ucwords($this->setting->sebutan_dusun) ?></th>
 											<th rowspan="2" class="text-center">RW</th>
@@ -135,7 +135,7 @@
 											</tr>
 										<?php endforeach; ?>
 									</tbody>
-									<tfoot class="bg-gray disabled color-palette">
+									<tfoot class=" disabled color-palette">
 										<tr>
 											<th colspan="5" class="text-right">Total</th>
 											<th class="text-right"><?= $bayi; ?></th>

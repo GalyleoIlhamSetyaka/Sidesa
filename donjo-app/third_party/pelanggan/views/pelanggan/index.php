@@ -218,7 +218,7 @@
                 <div class="box-body">
                     <div class="table-responsive">
                         <table class="table table-bordered dataTable table-hover tabel-daftar">
-                            <thead class="bg-gray">
+                            <thead class="">
                                 <tr>
                                     <th>No</th>
                                     <th>Aksi</th>
@@ -293,7 +293,7 @@
                 <div class="box-body">
                     <div class="table-responsive">
                         <table class="table table-bordered dataTable table-hover tabel-daftar">
-                            <thead class="bg-gray">
+                            <thead class="">
                                 <tr>
                                     <th>No</th>
                                     <th>Aksi</th>

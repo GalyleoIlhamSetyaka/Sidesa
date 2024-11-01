@@ -24,7 +24,7 @@
 							<form id="mainform" name="mainform" method="post">
 								<div class="table-responsive">
 									<table class="table table-bordered dataTable table-striped table-hover">
-										<thead class="bg-gray disabled color-palette">
+										<thead class=" disabled color-palette">
 											<tr>
 												<th>No</th>
 												<?php if (can('u')): ?>

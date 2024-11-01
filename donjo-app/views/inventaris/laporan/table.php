@@ -31,7 +31,7 @@
 												<div class="col-sm-12">
 													<div class="table-responsive">
 														<table id="tabel4-laporan" class="table table-bordered table-striped dataTable table-hover">
-															<thead class="bg-gray">
+															<thead class="">
 																<tr>
 																	<th class="text-center" rowspan="3">No</th>
 																	<th class="text-center" rowspan="3">Jenis Barang</th>

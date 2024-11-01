@@ -83,7 +83,7 @@
                     <div class="col-sm-12">
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover" id="tabeldata">
-                                <thead class="bg-gray color-palette">
+                                <thead class=" color-palette">
                                     <tr>
                                         <th><input type="checkbox" id="checkall" /></th>
                                         <th>No</th>

@@ -132,7 +132,7 @@ defined('BASEPATH') || exit('No direct script access allowed');
 							<?php endif; ?>
 								<div class="table-responsive">
 									<table class="table table-bordered dataTable table-striped table-hover tabel-daftar">
-										<thead class="bg-gray color-palette">
+										<thead class=" color-palette">
 											<tr>
 												<th>No</th>
 												<?php if ($order_by == 2): ?>

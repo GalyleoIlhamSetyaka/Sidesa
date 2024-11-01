@@ -50,7 +50,7 @@
             <br>
             <p>Data yang digunakan: kepesertaan setahun terakhir (ya/tidak) dan periode terakhir mendapatkan program ini</p>
             <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                <thead class="bg-gray disabled color-palette">
+                <thead class=" disabled color-palette">
                     <tr>
                         <td>Jenis Program</td>
                         <td>Relasi dengan Data Program Bantuan <?= config_item('nama_aplikasi') ?></td>
@@ -178,7 +178,7 @@
         <p>Data yang digunakan: penerima/pemilik jaminan atau ikut serta pada program dalam satu tahun terakhir</p>
         <div class="table-responsive">
             <table class="table table-bordered table-hover" style="margin-bottom: 0px;">
-                <thead class="bg-gray disabled color-palette">
+                <thead class=" disabled color-palette">
                     <tr>
                         <td>Jenis Program</td>
                         <td>Relasi dengan Data Jaminan/Program Bantuan <?= config_item('nama_aplikasi') ?></td>

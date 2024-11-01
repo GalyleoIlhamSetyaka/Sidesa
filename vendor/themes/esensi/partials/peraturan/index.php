@@ -30,7 +30,7 @@
 <div class="space-y-3 content py-3">
     <div class="table-responsive content">
         <table class="w-full text-sm" id="tabeldata">
-            <thead class="bg-gray disabled color-palette">
+            <thead class=" disabled color-palette">
                 <tr>
                     <th>No</th>
                     <th>Judul Produk Hukum</th>

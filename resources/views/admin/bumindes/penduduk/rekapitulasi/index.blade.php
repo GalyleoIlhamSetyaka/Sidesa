@@ -65,7 +65,7 @@
                         <div class="table-responsive">
                             <table class="table table-bordered text-center table-hover" id="tabeldata">
 
-                                <thead class="bg-gray color-palette">
+                                <thead class=" color-palette">
                                     <tr>
                                         <th rowspan="4" nowrap>NOMOR URUT</th>
                                         <th rowspan="4" nowrap>NAMA DUSUN / LINGKUNGAN</th>
@@ -140,7 +140,7 @@
 
                                 </tbody>
                                 <tfoot>
-                                    <tr class="bg-gray color-palette">
+                                    <tr class=" color-palette">
                                         <th class="padat" colspan="2">TOTAL</th>
                                         <th class="padat"></th>
                                         <th class="padat"></th>

@@ -35,7 +35,7 @@
 <h2 class="text-h4">Daftar Terdata</h2>
 <div class="table-responsive content">
   <table class="w-full text-sm" id="tabel-data">
-    <thead class="bg-gray disabled color-palette">
+    <thead class=" disabled color-palette">
       <tr>
         <th>No</th>
         <th>Nama</th>

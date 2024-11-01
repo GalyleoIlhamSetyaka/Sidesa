@@ -190,7 +190,7 @@
                                                             <?php else: ?>
                                                                 <div class="table-responsive">
                                                                     <table id="tabel-logs" class="table table-bordered dataTable table-striped table-hover tabel-daftar">
-                                                                        <thead class="bg-gray">
+                                                                        <thead class="">
                                                                             <tr>
                                                                                 <th>Level</th>
                                                                                 <th>Tanggal</th>

@@ -36,7 +36,7 @@
         {!! form_open(null, 'id="mainform" name="mainform"') !!}
         <div class="table-responsive">
             <table class="table table-bordered table-hover tabel-daftar" id="tabeldata">
-                <thead class="bg-gray color-palette">
+                <thead class=" color-palette">
                     <tr>
                         <th rowspan="2">NOMOR URUT</th>
                         <th rowspan="2">NAMA PROYEK / KEGIATAN</th>
