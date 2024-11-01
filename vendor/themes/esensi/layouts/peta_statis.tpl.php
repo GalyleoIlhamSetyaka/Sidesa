@@ -30,7 +30,7 @@
   </style>
 </head>
 
-<body class="font-primary bg-gray-100">
+<body class="font-primary bg-slate-500">
   <style>
     #map {
       width: 100%;

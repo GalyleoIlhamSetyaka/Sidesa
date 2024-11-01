@@ -13,7 +13,7 @@
     <?php foreach($gallery as $album) : ?>
       <?php if(is_file(LOKASI_GALERI . "kecil_" . $album['gambar'])) : ?>
         <?php $link = IS_PREMIUM ? site_url("galeri/{$album['id']}") : site_url('first/sub_gallery/'.$album['id']) ?>
-        <a href="<?= $link ?>" class="w-full bg-gray-100 block relative">
+        <a href="<?= $link ?>" class="w-full bg-slate-500 block relative">
           <img src="<?= AmbilGaleri($album['gambar'],'kecil') ?>" alt="<?= $album['nama'] ?>" class="h-44 w-full object-cover object-center" title="<?= $album['nama'] ?>">
           <p class="py-2 text-center block"><?= $album['nama'] ?></p>
         </a>

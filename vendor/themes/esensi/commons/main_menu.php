@@ -3,7 +3,7 @@
 .width-full { width: max-content; }
 .nav-search { margin-left: auto; }
 </style>
-<nav class="-900 text-white hidden lg:block" role="navigation">
+<nav class="bg-gray-900 text-white hidden lg:block" role="navigation">
   <ul class="flex items-center"> <!-- Use flex to align items in a row -->
     <li class="inline-block">
       <a href="<?= site_url() ?>" class="inline-block py-3 px-4 hover:bg-primary-200"><i class="fa fa-home"></i></a>

@@ -6,7 +6,7 @@
   <?php $this->load->view($folder_themes . '/commons/meta') ?>
   <?php $this->load->view($folder_themes . '/commons/source_css') ?>
 </head>
-<body class="font-primary bg-gray-100">
+<body class="font-primary bg-slate-500">
 
   <?php $this->load->view($folder_themes . '/commons/loading_screen') ?>
   <?php $this->load->view($folder_themes . '/commons/header') ?>

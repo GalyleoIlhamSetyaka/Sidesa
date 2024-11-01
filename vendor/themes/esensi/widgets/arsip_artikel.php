@@ -9,16 +9,16 @@
   <div class="box-body" style="padding-top: .1rem;">
     <ul class="nav nav-tabs flex list-none border-b-0 pl-0 mb-4" id="tab-arsip" role="tablist">
       <li class="nav-item flex-grow text-center active" role="presentation"><a href="#terkini"
-          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active"
+          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-slate-500 focus:border-transparent active"
           data-bs-toggle="pill" data-bs-target="#terkini" role="tab" aria-controls="terkini" aria-selected="true"
           data-toggle="tab" href="#terkini">Terkini</a></li>
 
       <li class="nav-item flex-grow text-center" role="presentation"><a href="#populer"
-          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-slate-500 focus:border-transparent"
           data-bs-toggle="pill" data-bs-target="#populer" role="tab" aria-controls="populer" aria-selected="false">Populer</a></li>
 
       <li class="nav-item flex-grow text-center" role="presentation"><a href="#acak"
-          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent"
+          class="nav-link w-full block font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-slate-500 focus:border-transparent"
           data-bs-toggle="pill" data-bs-target="#acak" role="tab" aria-controls="acak" aria-selected="false">Acak</a>
       </li>
     </ul>
