@@ -61,7 +61,7 @@
         <ul class="space-x-1">
             <?php foreach($social_media as $sm) : ?>
                 <?php if($link = $sm['link']) : ?>
-                <li class="inline-block"><a href="<?= $link ?>" class="inline-flex items-center justify-center <?= $sm['color'] ?> h-8 w-8 rounded-full"><i class="fab fa-lg <?= $sm['icon'] ?>"></i></a></li>
+                <li class="inline-block"><a href="<?= $link ?>" class="inline-flex items-center justify-center mr-10 <?= $sm['color'] ?> h-8 w-8 rounded-full"><i class="fab fa-lg <?= $sm['icon'] ?>"></i></a></li>
                 <?php endif ?>
             <?php endforeach ?>
         </ul>

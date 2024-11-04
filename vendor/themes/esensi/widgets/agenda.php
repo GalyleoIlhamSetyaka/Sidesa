@@ -7,7 +7,7 @@
     </h3>
   </div>
   <div class="box-body">
-    <ul class="nav nav-tabs flex list-none border-b-0 pl-0 mb-4" id="tab-agenda" role="tablist">
+    <ul class="nav nav-tabs flex list-none border-b-10 pl-0 mb-4" id="tab-agenda" role="tablist">
       <?php if (count($hari_ini ?? []) > 0): ?>
       <li class="nav-item flex-grow text-center active" role="presentation"><a href="#hari-ini" class="nav-link font-medium border-x-0 border-t-0 border-b-2 border-transparent px-4 py-3 my-2 hover:border-transparent hover:bg-slate-500 focus:border-transparent active" data-bs-toggle="pill" data-bs-target="#hari-ini" role="tab"
       aria-controls="hari-ini" aria-selected="true" data-toggle="tab" href="#hari-ini">Hari ini</a></li>
@@ -78,7 +78,7 @@
       </div>
 
       <div id="lama" class="tab-pane fade <?php count(array_merge($hari_ini, $yad) ?? []) == 0 and print('show active')?>" role="tabpanel">
-        <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="150" align="center">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="230" align="center">
           <?php foreach ($lama as $agenda): ?>
             <table class="w-full text-sm">
               <tr>

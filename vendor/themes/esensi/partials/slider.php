@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<section class="sliderx w-full relative group transition-all duration-300 overflow-hidden h-9000">
-  <div class="owl-carousel rounded-lg h-900 z-10 relative w-full">
+<section class="sliderx w-full relative group transition-all duration-300 overflow-hidden h-[400px] lg:h-[480px]">
+  <div class="owl-carousel rounded-lg relative w-full h-full">
     <?php foreach($slider_gambar['gambar'] as $data) : ?>
     <?php $img = $slider_gambar['lokasi'] . 'sedang_' . $data['gambar']; ?>
     <?php if(is_file($img)) : ?>
-    <figure class="h-900 lg:h-[1800px] w-full">
+    <figure class="w-full h-full">
       <img src="<?= base_url($img) ?>" alt="<?= $data['judul'] ?>"
-        class="max-w-full w-full h-900 lg:h-[1500px] object-cover">
+        class="max-w-full w-full h-full object-cover">
 
         <?php if($slider_gambar['sumber'] != 3) : ?>
           <div class="absolute bg-black bg-opacity-60 bottom-0 left-0 right-0 text-white group">

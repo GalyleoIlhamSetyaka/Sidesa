@@ -1,121 +1,76 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php
+defined('BASEPATH') || exit('No direct script access allowed');
+?>
 
-<?php if(!empty($widget_keuangan['tahun']) && !is_null($widget_keuangan['tahun'])): ?>
-<!-- widget Statistik -->
-<style type="text/css">
-  .graph,
-  .graph-sub {
-    padding: 0 12px;
-    padding-top: 4px;
-  }
-
-  .graph-sub {
-    font-family: 'Courier New', monospace;
-    font-size: 10px;
-    color: #333;
-    font-weight: bold;
-    text-align: left;
-    white-space: nowrap;
-  }
-
-  .graph {
-    padding-top: 4px;
-  }
-
-  .graph-not-available {
-    text-align: center;
-    font-family: 'Courier New', monospace;
-    font-size: 12px;
-  }
-
-  #graph-legend {
-    padding: 0;
-    padding-bottom: 12px;
-  }
-
-  .highcharts-container,
-  svg:not(:root) {
-    overflow: visible !important;
-    position: absolute;
-  }
-
-  .highcharts-tooltip>span {
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid silver;
-    border-radius: 3px;
-    box-shadow: 1px 1px 2px #888;
-    padding: 8px;
-  }
-</style>
-<div class="box box-primary box-solid">
-  <div class="box-header">
-    <h3 class="box-title">
-      <a href="<?= site_url('artikel/kategori/1001') ?>"><i class="fa fa-chart-bar mr-1"></i><?= $judul_widget ?></a>
-    </h3>
-  </div>
-  <div class="box-body">
-    <div id="widget-keuangan-container">
-      <div class="text-center">
-        <div x-data="{
-            open: false,
-            toggle() {
-                if (this.open) {
-                    return this.close()
-                }
-    
-                this.open = true
-            },
-            close(focusAfter) {
-                this.open = false
-    
-                focusAfter && focusAfter.focus()
-            }
-        }" x-on:keydown.escape.prevent.stop="close($refs.button)"
-          x-on:focusin.window="! $refs.panel.contains($event.target) && close()" x-id="['dropdown-button']" class="relative text-right">
-          <!-- Button -->
-          <button x-ref="button" x-on:click="toggle()" :aria-expanded="open" :aria-controls="$id('dropdown-button')"
-            type="button" class="btn btn-primary text-sm">
-            <span><i class="fas fa-bars"></i></span>
-          </button>
-
-          <!-- Panel -->
-          <div x-ref="panel" x-show="open" x-transition.origin.top.left x-on:click.outside="close($refs.button)"
-            :id="$id('dropdown-button')" style="display: none;"
-            class="absolute right-0 mt-2 bg-white shadow-lg z-[9999]">
-            <ul class="divide-y text-base font-normal">
-              <?php foreach ($widget_keuangan['tahun'] as $key):?>
-              <li><a href="#!" class="py-2 px-3 block"><?= $key ?></a></li>
-              <li><a href="#!" class="py-2 px-3 block" @click="open = false" onclick="gantiTipe('pelaksanaan'); gantiTahun('<?= $key ?>')">Pelaksanaan
-                  APBDes</a></li>
-              <li><a href="#!"  class="py-2 px-3 block" @click="open = false" onclick="gantiTipe('pendapatan'); gantiTahun('<?= $key ?>')">Pendapatan
-                  APBDes</a></li>
-              <li><a href="#!" class="py-2 px-3 block" @click="open = false" onclick="gantiTipe('belanja'); gantiTahun('<?= $key ?>')">Belanja APBDes</a>
-              </li>
-              <?php endforeach;?>
-            </ul>
-          </div>
+<?php if (!empty($widget_keuangan['tahun']) && !is_null($widget_keuangan['tahun'])) : ?>
+    <div class="box box-primary box-solid">
+        <div class="box-header">
+            <h3 class="box-title">
+                <a href="<?= site_url('artikel/kategori/1001') ?>">
+                    <i class="fa fa-chart-bar mr-1"></i><?= $judul_widget ?>
+                </a>
+            </h3>
         </div>
-        <h3 class="text-h5 pt-2"></h3>
-        <p id="grafik-tahun"></p>
-      </div>
-      <div id="grafik-container">
-      </div>
+        <div class="box-body">
+            <div id="widget-keuangan-container">
+                <div class="text-center">
+                    <div x-data="dropdown()" x-init="initDropdown()" class="relative text-right">
+                        <button x-ref="button" @click="toggleDropdown()" :aria-expanded="open" :aria-controls="$id('dropdown-button')" type="button" class="btn btn-primary text-sm">
+                            <span><i class="fas fa-bars"></i></span>
+                        </button>
+
+                        <div x-ref="panel" x-show="open" x-transition.origin.top.left @click.outside="closeDropdown($refs.button)" :id="$id('dropdown-button')" style="display: none;" class="absolute right-0 mt-2 bg-white shadow-lg z-[9999]">
+                            <ul class="divide-y text-base font-normal">
+                                <?php foreach ($widget_keuangan['tahun'] as $key) : ?>
+                                    <li><a href="#!" class="py-2 px-3 block"><?= $key ?></a></li>
+                                    <li><a href="#!" class="py-2 px-3 block" @click="closeDropdown(); changeType('pelaksanaan'); changeYear('<?= $key ?>')">Pelaksanaan APBDes</a></li>
+                                    <li><a href="#!" class="py-2 px-3 block" @click="closeDropdown(); changeType('pendapatan'); changeYear('<?= $key ?>')">Pendapatan APBDes</a></li>
+                                    <li><a href="#!" class="py-2 px-3 block" @click="closeDropdown(); changeType('belanja'); changeYear('<?= $key ?>')">Belanja APBDes</a></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="text-h5 pt-2"></h3>
+                    <p id="grafik-tahun"></p>
+                </div>
+                <div id="grafik-container"></div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<script type="text/javascript">
-  var rawData = <?= $widget_keuangan['data']; ?> ;
-  var year = "<?= $widget_keuangan['tahun_terbaru'] ?>";
-  var type = "pelaksanaan"
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('dropdown', () => ({
+                open: false,
+                initDropdown() {
+                    this.$watch('open', (value) => {
+                        if (value) {
+                            this.$refs.panel.focus();
+                        }
+                    });
+                },
+                toggleDropdown() {
+                    this.open = !this.open;
+                },
+                closeDropdown(focusAfter) {
+                    this.open = false;
+                    focusAfter && focusAfter.focus();
+                }
+            }));
+        });
 
-  Highcharts.setOptions({
-    lang: {
-      thousandsSep: '.'
-    }
-  })
+        var rawData = <?= $widget_keuangan['data']; ?>;
+        var year = "<?= $widget_keuangan['tahun_terbaru'] ?>";
+        var type = "pelaksanaan";
 
-  function displayChart(tahun, tipe) {
+        Highcharts.setOptions({
+            lang: {
+                thousandsSep: '.'
+            }
+        });
+
+        function displayChart(tahun, tipe) {
+          function displayChart(tahun, tipe) {
     resetContainer();
     switch (tipe) {
       case "pelaksanaan":
@@ -353,29 +308,25 @@
     });
     $("p#grafik-tahun").text("Tahun " + year);
   }
+        }
 
-  function resetContainer() {
-    $("#grafik-container").html("");
-  }
+        function resetContainer() {
+            $("#grafik-container").html("");
+        }
 
-  function gantiTahun(newThn) {
-    year = newThn;
-    displayChart(year, type);
-  }
+        function changeYear(newYear) {
+            year = newYear;
+            displayChart(year, type);
+        }
 
-  function gantiTipe(newType) {
-    type = newType;
-    displayChart(year, type);
-  }
+        function changeType(newType) {
+            type = newType;
+            displayChart(year, type);
+        }
 
-  $("#keuangan-selector").change(function () {
-    gantiTahun($("#keuangan-selector").val());
-  })
-
-  $(document).ready(function () {
-    //Realisasi Pelaksanaan APBD
-    $("#keuangan-selector").val("<?= $widget_keuangan['tahun_terbaru']?>")
-    displayChart(year, type);
-  });
-</script>
+        $(document).ready(function() {
+            $("#keuangan-selector").val("<?= $widget_keuangan['tahun_terbaru'] ?>");
+            displayChart(year, type);
+        });
+    </script>
 <?php endif; ?>

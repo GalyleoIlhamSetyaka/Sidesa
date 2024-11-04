@@ -4,6 +4,11 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 ::before,
 ::after {
@@ -3573,9 +3578,6 @@ textarea.form-control.is-invalid {
 .card {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -4960,7 +4962,7 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .bg-primary-100 {
   background-color: var(--primary-base-color);
 }
-.-800 {
+.bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
@@ -4968,11 +4970,11 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.-300 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
-.-200 {
+.bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
@@ -5059,27 +5061,27 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
-.-50 {
+.bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
-.-400 {
+.bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
-.-500 {
+.bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
-.-600 {
+.bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
-.-700 {
+.bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
-.-900 {
+.bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
@@ -5467,6 +5469,10 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   --tw-bg-opacity: 1;
   background-color: rgb(6 78 59 / var(--tw-bg-opacity));
 }
+.bg-teal-gradient {
+  background-image: linear-gradient(to right, rgba(20, 184, 166, 1), rgba(20, 184, 166, 0.8));
+}
+
 .bg-teal-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(240 253 250 / var(--tw-bg-opacity));
@@ -5487,10 +5493,11 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   --tw-bg-opacity: 1;
   background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
-.bg-teal-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
-}
+  .bg-teal-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+  }
+
 .bg-teal-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
@@ -7072,7 +7079,6 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
 }
 .form-control {
   display: block;
@@ -7108,19 +7114,51 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .owl-carousel .owl-stage-outer {
   transform: translate3d(0, 0, 0)
 }
-.sliderx .owl-item {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-  margin-top: 0px !important;
-  height: 1000vh !important;
-  border-width: 0px !important;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+/* Replace or update the existing .sliderx styles */
+.sliderx {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
-@media (min-width: 1024px) {
-  .sliderx .owl-item {
-    height: 400px !important;
-  }
+
+.sliderx .owl-item {
+  margin: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.sliderx .owl-carousel {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%; /* Make carousel fill container height */
+}
+
+.sliderx figure {
+  width: 100%;
+  height: 100%; /* Make figure fill carousel height */
+  position: relative;
+}
+
+.sliderx figure img {
+  width: 100%;
+  height: 100%; /* Make image fill figure height */
+  object-fit: cover;
+}
+
+/* Update slider.php HTML */
+.sliderx .slider-nav {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.sliderx .slider-nav span {
+  pointer-events: auto; /* Re-enable clicks for nav buttons */
 }
 .before\:inline-block::before {
   content: var(--tw-content);

@@ -4,10 +4,10 @@
   <div class="box-body h-5">
     <div class="owl-carousel" id="aparatur-carousel">
       <?php foreach ($aparatur_desa['daftar_perangkat'] as $data) : ?>
-        <div class="item p-1" style="height: auto; width: auto;">
+        <div class="item p-1 mt-10" style="height: auto; width: auto;">
           <div class="relative space-y-1">
             <div class="w-full">
-              <img src="<?= $data['foto'] ?>" alt="<?= $data['nama'] ?>" class="object-cover object-center -300" style="height: 200px; width: 150px; margin-left: 110px; ">
+              <img src="<?= $data['foto'] ?>" alt="<?= $data['nama'] ?>" class="object-cover object-center bg-gray-300" style="height: 200px; width: 150px; margin-left: 110px; ">
             </div>
             <?php if ($this->web_widget_model->get_setting('aparatur_desa', 'overlay') == true) : ?>
               <div class="space-y-1 text-sm text-center z-10">

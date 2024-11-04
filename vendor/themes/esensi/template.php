@@ -7,7 +7,7 @@
   <?php $this->load->view($folder_themes .'/commons/source_css') ?>
   <?php $this->load->view($folder_themes .'/commons/source_js') ?>
 </head>
-<body class="font-primary bg-slate-500">
+<body class="font-primary bg-stone-200">
   <?php if($this->uri->segment(2) == 'kategori' && empty($judul_kategori)) : ?>
     <?php $this->load->view($folder_themes .'/commons/404') ?>
     <?php else : ?>
