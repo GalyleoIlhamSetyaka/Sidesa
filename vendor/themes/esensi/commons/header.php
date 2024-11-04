@@ -12,7 +12,7 @@
     <section class="relative z-10 text-center space-y-7 mt-0 px-3 lg:px-5 pb-0">
       <a href="<?= site_url() ?>">
         <figure>
-          <img src="<?= gambar_desa($desa['logo']) ?>" alt="Logo <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?>" class="h-30 mx-auto pb-10">
+          <img src="<?= gambar_desa($desa['logo']) ?>" alt="Logo <?= ucfirst($this->setting->sebutan_desa).' '.ucwords($desa['nama_desa']) ?>" class="h-50 mx-auto pb-10">
         </figure>
         <span class="text-h2 block"><?= NAMA_DESA ?></span>
         <p><?= ucfirst($this->setting->sebutan_kecamatan_singkat) ?>
@@ -25,7 +25,7 @@
       </a>
     </section>
     <?php if($teks_berjalan) : ?>
-      <div class="block px-3 bg-white text-white bg-opacity-20 py-1.5 text-xs mt-6 mb-0 z-20 relative">
+      <div class="block px-3 bg-slate-200 text-white bg-opacity-20 py-1.5 text-2x1 mt-6 mb-0 z-20 relative">
         <marquee onmouseover="this.stop();" onmouseout="this.start();" class="block divide-x-4 relative">
           <?php foreach($teks_berjalan as $marquee) : ?>
             <span class="px-3">

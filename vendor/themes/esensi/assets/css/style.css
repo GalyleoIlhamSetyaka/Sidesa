@@ -7114,6 +7114,15 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
 .owl-carousel .owl-stage-outer {
   transform: translate3d(0, 0, 0)
 }
+
+.galleri .owl-carousel .owl-item {
+  @apply px-4;
+}
+.galleri .owl-carousel .owl-nav,
+.galleri .owl-carousel .owl-dots {
+  display: none;
+}
+
 /* Replace or update the existing .sliderx styles */
 .sliderx {
   position: relative;

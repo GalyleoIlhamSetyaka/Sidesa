@@ -38,7 +38,6 @@
                   <i class="fas fa-chevron-left text-xs ml-1 inline-block transition duration-300" :class="{'transform rotate-180': dropdown}"></i>
                 <?php endif; ?>
                 </a></li>
-
                   <?php foreach ($childrens['childrens'] as $bmenu) : ?>
                     <?php $bhas_dropdown = count($bmenu['childrens'] ?? []) > 0; ?>
                     <li class="inline-block relative" <?php $bhas_dropdown and print('x-data="{dropdown: false}"') ?>>

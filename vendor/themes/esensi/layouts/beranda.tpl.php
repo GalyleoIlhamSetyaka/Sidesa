@@ -51,21 +51,24 @@
     </div>
 
     <!-- Gallery Section -->
-    <div class="mt-5 bg-white shadow rounded-lg overflow-hidden">
+    <div class="galleri mt-5 bg-white shadow rounded-lg overflow-hidden h-[500px]">
       <h3 class="text-xl font-bold text-center bg-yellow-400 py-3 underline">Galeri Foto</h3>
 
-      <!-- Horizontal scroll container for the gallery -->
-      <div class="flex overflow-x-auto space-x-2 p-4">
+      <!-- Owl Carousel for the gallery -->
+      <div class="galleri owl-carousel owl-theme h-[500px]">
         <?php foreach ($w_gal as $data): ?>
           <?php if (is_file(LOKASI_GALERI . "sedang_" . $data['gambar'])): ?>
-            <a href='<?= site_url("first/sub_gallery/$data[id]"); ?>' title="<?= "Album : $data[nama]" ?>" class="flex-shrink-0 w-100 h-140 overflow-hidden">
-              <img src="<?= AmbilGaleri($data['gambar'],'kecil') ?>" alt="<?= "Album : $data[nama]" ?>" class="object-cover w-full h-full">
-            </a>
+            <div class="item">
+              <a href='<?= site_url("first/sub_gallery/$data[id]"); ?>' title="<?= "Album : $data[nama]" ?>" class="flex-shrink-0 w-full h-full overflow-hidden">
+                <img src="<?= AmbilGaleri($data['gambar'],'kecil') ?>" alt="<?= "Album : $data[nama]" ?>" class="object-cover w-full h-full">
+              </a>
+            </div>
           <?php endif; ?>
         <?php endforeach; ?>
       </div>
     </div>
-          <!-- Widgets Section (Statistics, Archive, Agenda) -->
+    
+    <!-- Widgets Section (Statistics, Archive, Agenda) -->
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
         <?php 
         $widgets = [
@@ -108,3 +111,25 @@
     scrollbar-width: none;  /* Hide scrollbar for Firefox */
   }
 </style>
+
+<script>
+  $(document).ready(function() {
+  $(".galleri .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 16,
+    nav: false,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      640: {
+        items: 3
+      },
+      1024: {
+        items: 3
+      }
+    }
+  });
+});
+</script>
