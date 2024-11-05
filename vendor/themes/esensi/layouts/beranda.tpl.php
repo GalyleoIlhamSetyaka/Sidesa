@@ -8,13 +8,13 @@
     $title = $title['kategori'];
   }
 ?>
-<div class="container mx-auto my-8 lg:px-5 px-3 text-gray-600">
+<div class="beranda container mx-auto my-8 lg:px-5 px-3 text-gray-600">
   <main class="w-full space-y-5 mt-5">
     
     <!-- Slider Section (only on the homepage) -->
     <?php if (empty($cari AND count($slider_gambar ?? []) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
       <div class="flex flex-col gap-5 lg:flex-row">
-        <div class="lg:w-3/4 w-full h-[600px] lg:h-[680px] mx-1">
+        <div class="lg:w-3/4 w-full h-full lg:h-[680px] mx-1">
           <?php $this->load->view($folder_themes . '/partials/slider') ?>
         </div>
         <div class="lg:w-1/3 w-full mt-5 lg:mt-0">
@@ -100,11 +100,11 @@
 
 <style>
   .scrollable-article {
-    max-height: 60vh; /* Limit the height of the article container */
-    overflow-y: auto; /* Enable vertical scroll */
+    max-height: 60vh; 
+    overflow-y: auto; 
   }
   .scrollbar-hidden::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for WebKit (Chrome, Safari) */
+    display: none; 
   }
   .scrollbar-hidden {
     -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */

@@ -381,6 +381,13 @@ body {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.beranda .container{
+  width: 100%;
+  margin: 1px;
+  background-color: white ;
+}
+
 .container {
   width: 100%;
   margin: 1px;
