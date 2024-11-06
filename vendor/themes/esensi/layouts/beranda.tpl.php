@@ -12,17 +12,14 @@
     
     <!-- Slider Section (only on the homepage) -->
     <?php if (empty($cari AND count($slider_gambar ?? []) > 0) AND $this->uri->segment(2) != 'kategori' AND ($this->uri->segment(2) !== 'index' AND $this->uri->segment(1) !== 'index')) : ?>
-      <div class="flex flex-col gap-5 lg:flex-row">
-        <div class="lg:w-3/4 w-full h-full lg:h-[680px] mx-1">
+      <div class="flex flex-col">
+        <div class="lg:w-full w-full h-full lg:h-[680px] mx-1">
           <?php $this->load->view($folder_themes . '/partials/slider') ?>
-        </div>
-        <div class="lg:w-1/3 w-full mt-5 lg:mt-0">
-          <?php $this->load->view($folder_themes . '/partials/sidebar2') ?>
         </div>
       </div>
     <?php endif; ?>
     
-
+    <!-- Menu Box -->
     <?php $this->load->view($folder_themes . '/layouts/flexmenu'); ?>
 
     <!-- Category Title / Latest Articles -->

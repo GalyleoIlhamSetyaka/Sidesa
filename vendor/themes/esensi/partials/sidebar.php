@@ -1,9 +1,5 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="content"> <!-- Assuming there's a content div -->
-  <!-- Your main content goes here -->
-</div>
-
 <div class="space-y-50 sidebar"> <!-- Changed from <aside> to <div> -->
   </form>
   <?php if ($w_cos): ?>

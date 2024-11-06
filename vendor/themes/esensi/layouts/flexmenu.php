@@ -8,13 +8,13 @@ $flexItems = [
         'icon' => 'presentation.gif',
         'text' => 'Data Wilayah',
         'subtext' => 'Populasi Per Wilayah',
-        'href' => 'data_wilayah'
+        'href' => 'data-wilayah'
     ],
     [
         'icon' => 'stall.gif',
         'text' => 'Lapak Desa',
         'subtext' => 'Hasil Olahan Warga',
-        'href' => 'lapak_desa'
+        'href' => 'lapak'
     ],
     [
         'icon' => 'blood-test.gif',
@@ -29,40 +29,40 @@ $flexItems = [
         'href' => $siteman_url
     ],
     [
-        'icon' => 'camera.gif',
+        'icon' => 'hammer.gif',
         'text' => 'Dokumentasi',
         'subtext' => 'Kegiatan Desa',
-        'href' => 'dokumentasi_kegiatan'
+        'href' => 'pembangunan'
     ],
     [
         'icon' => 'lawyer-day.gif',
         'text' => 'Produk Hukum',
         'subtext' => 'Peraturan di Desa',
-        'link' => 'produk_hukum'
+        'href' => 'peraturan-desa'
     ],
     [
         'icon' => 'around-the-world.gif',
         'text' => 'Status SDGs',
         'subtext' => 'Sustainable Goals',
-        'link' => 'status_sdgs'
+        'href' => 'status-sdgs'
     ],
     [
         'icon' => 'voting.gif',
         'text' => 'DPT',
         'subtext' => 'Calon Pemilih',
-        'link' => 'dpt_calon_pemilih'
+        'href' => 'first/dpt'
     ],
     [
         'icon' => 'speaker.gif',
         'text' => 'Lapor',
         'subtext' => 'Pengaduan Warga',
-        'link' => 'pengaduan'
+        'href' => 'pengaduan'
     ],
     [
         'icon' => 'handshake.gif',
         'text' => 'Bantuan',
         'subtext' => 'Penerima Manfaat',
-        'link' => 'bantuan_penerima'
+        'href' => 'first/statistik/bantuan_penduduk'
     ],
     [
         'icon' => 'photo-gallery.gif',
@@ -92,7 +92,7 @@ $flexItems = [
                class="flex group bg-white hover:bg-gray-50 rounded-xl p-4 transition-all duration-300 relative overflow-hidden"
                <?= $isLoginMenu ? 'target="_blank"' : '' ?>>
                 
-                <div class="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"></div>
                 
                 <div class="relative flex items-center space-x-4 w-full">
                     <div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden">
