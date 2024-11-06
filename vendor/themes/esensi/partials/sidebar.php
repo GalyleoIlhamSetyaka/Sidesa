@@ -1,6 +1,10 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<aside class="space-y-50 sidebar">
+<div class="content"> <!-- Assuming there's a content div -->
+  <!-- Your main content goes here -->
+</div>
+
+<div class="space-y-50 sidebar"> <!-- Changed from <aside> to <div> -->
   </form>
   <?php if ($w_cos): ?>
     <?php foreach($w_cos as $widget) : ?>
@@ -25,4 +29,4 @@
       </div>
     <?php endforeach ?>
   <?php endif ?>
-</aside>
+</div>

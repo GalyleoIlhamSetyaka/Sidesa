@@ -1,9 +1,14 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-<style>
+<style type="text/css">
 .width-full { width: max-content; }
 .nav-search { margin-left: auto; }
+.sticky-navbar {
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
 </style>
-<nav class="bg-purple-700 text-white hidden lg:block" role="navigation">
+<nav class="bg-primary-100  text-white hidden lg:block sticky-navbar" role="navigation">
   <ul class="flex items-center"> <!-- Use flex to align items in a row -->
     <li class="inline-block">
       <a href="<?= site_url() ?>" class="inline-block py-3 px-4 hover:bg-primary-200"><i class="fa fa-home"></i></a>
@@ -14,7 +19,7 @@
         <li class="inline-block relative" <?php $has_dropdown and print('x-data="{dropdown: false}"') ?>>
           <?php $menu_link = $has_dropdown ? '#!' : $menu['link_url']; ?>
           <a href="<?= $menu_link ?>"
-            class="p-3 inline-block hover:bg-primary-200"
+            class="p-3 inline-block hover:bg-primary-200" 
             @mouseover="dropdown = true"
             @mouseleave="dropdown = false"
             @click="dropdown = !dropdown"

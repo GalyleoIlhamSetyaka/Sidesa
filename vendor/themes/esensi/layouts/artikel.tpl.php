@@ -26,16 +26,13 @@
     <?php $this->load->view($folder_themes . '/commons/header') ?>
     
     <div class="container mx-auto lg:px-5 px-3 flex flex-col lg:flex-row my-2 gap-3 lg:gap-5 justify-between text-gray-600">
-      <main class="lg:w-2/3 w-full overflow-hidden ">
+      <main class="lg:w-full w-full overflow-hidden ">
           <div class="scrollable-article scrollbar-hidden"> <!-- Tambahkan kelas scrollbar-hidden -->
             <?php $this->load->view($folder_themes . '/partials/article'); ?>
             <?php $this->load->view($folder_themes . '/partials/comment') ?>
             <?php $this->load->view($folder_themes . '/commons/sticky_share'); ?>
           </div>
       </main>
-      <div class="lg:w-1/3 w-full">
-        <?php $this->load->view($folder_themes . '/partials/sidebar') ?>
-      </div>
     </div>
 
     <?php $this->load->view($folder_themes .'/commons/footer') ?>

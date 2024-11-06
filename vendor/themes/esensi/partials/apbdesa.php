@@ -1,7 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<style type="text/css">
-
+<style type="text/css">s
   .progress-bar span {
     position: absolute;
     right: 20px;

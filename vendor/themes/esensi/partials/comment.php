@@ -72,9 +72,11 @@
           <img id="captcha" src="<?= site_url('captcha') ?>" alt="CAPTCHA Image" class="max-w-full h-auto">
           <button type="button" class="hover:text-link text-xs lg:text-sm" onclick="document.getElementById('captcha').src = '<?= site_url("captcha") ?>'; return false">[Ganti Gambar]</button>
         </div>
-        <input type="text" name="captcha_code" class="form-input" placeholder="Tulis kembali kode sebelah">
+        <div class="flex lg:flex-row gap-3">
+            <input type="text" name="captcha_code" class="form-input flex-grow" placeholder="Tulis kembali kode sebelah">
+            <button type="submit" class="btn btn-secondary flex-shrink-0">Kirim Komentar <i class="fas fa-paper-plane ml-5"></i></button>
+        </div>
       </div>
-      <button type="submit" class="btn btn-secondary">Kirim Komentar <i class="fas fa-paper-plane ml-2"></i></button>
     </form>
   <?php endif ?>
 <?php endif; ?>

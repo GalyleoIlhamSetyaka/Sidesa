@@ -42,6 +42,7 @@ html {
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
+  background: #52525B;
 }
 /*
 1. Add the correct height in Firefox.
@@ -382,7 +383,7 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.beranda .container{
+.container{
   width: 100%;
   margin: 1px;
   background-color: white ;

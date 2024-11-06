@@ -1,5 +1,4 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
-
 <?php
   $title = (!empty($judul_kategori)) ? $judul_kategori : 'Artikel Terkini';
   $slug = 'terkini';
@@ -8,7 +7,7 @@
     $title = $title['kategori'];
   }
 ?>
-<div class="beranda container mx-auto my-8 lg:px-5 px-3 text-gray-600">
+<div class="container mx-auto my-8 lg:px-5 px-3 text-gray-600">
   <main class="w-full space-y-5 mt-5">
     
     <!-- Slider Section (only on the homepage) -->
@@ -22,6 +21,9 @@
         </div>
       </div>
     <?php endif; ?>
+    
+
+    <?php $this->load->view($folder_themes . '/layouts/flexmenu'); ?>
 
     <!-- Category Title / Latest Articles -->
     <div class="card p-4 rounded-lg text-slate-500">
@@ -52,7 +54,7 @@
 
     <!-- Gallery Section -->
     <div class="galleri mt-5 bg-white shadow rounded-lg overflow-hidden h-[500px]">
-      <h3 class="text-xl font-bold text-center bg-yellow-400 py-3 underline">Galeri Foto</h3>
+      <h3 class="text-xl font-bold text-white text-center bg-primary-100 py-3 ">Galeri Foto</h3>
 
       <!-- Owl Carousel for the gallery -->
       <div class="galleri owl-carousel owl-theme h-[500px]">
@@ -91,14 +93,22 @@
       
     <!-- Village Staff Section -->
     <div class="mt-5 bg-white shadow rounded-lg overflow-hidden">
-      <h3 class="text-xl font-bold text-center bg-yellow-400 py-3 underline">Aparatur Desa</h3>
+      <h3 class="text-xl font-bold text-white text-center bg-primary-100 py-3 ">Aparatur Desa</h3>
       <?php $this->load->view($folder_themes . '/widgets/aparatur_desa', ['judul_widget' => 'Aparatur Desa']) ?>
     </div>
 
   </main>
 </div>
 
-<style>
+<style type="text/css">
+  .Artikel {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,208,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  .Category-Article {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,208,1) 35%, rgba(0,212,255,1) 100%);
+  }
   .scrollable-article {
     max-height: 60vh; 
     overflow-y: auto; 

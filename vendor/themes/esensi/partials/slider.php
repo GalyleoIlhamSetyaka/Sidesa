@@ -8,7 +8,6 @@
     <figure class="w-full h-full">
       <img src="<?= base_url($img) ?>" alt="<?= $data['judul'] ?>"
         class="max-w-full w-full h-full object-cover">
-
         <?php if($slider_gambar['sumber'] != 3) : ?>
           <div class="absolute bg-black bg-opacity-60 bottom-0 left-0 right-0 text-white group">
             <a href="<?= site_url('artikel/'.buat_slug($data)) ?>" class="font-bold text-h5 block py-4 px-5 group-hover:py-5 transition-all duration-300"><?= $data['judul'] ?></a>
