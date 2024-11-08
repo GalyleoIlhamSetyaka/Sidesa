@@ -7,7 +7,7 @@
     type="button"
     class="lg:hidden inline-block py-4 px-6 z-10 relative"
     @click="catMenu = !catMenu">
-    <i class="fa fa-list fa-lg"></i>
+    <i class="fa fa-bars fa-lg " style="color: black;"></i>
   </button>
 
   <div 

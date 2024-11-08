@@ -2,7 +2,7 @@
 
 <?php if ($jam_kerja) : ?>
   <div class="box box-primary box-solid">
-    <div class="box-header">
+    <div class="box-header " style="width: 100%; height: 400px; margin: 0 auto">
       <h3 class="box-title">
         <i class="fa fa-clock-o mr-1"></i> <?= $judul_widget ?>
       </h3>

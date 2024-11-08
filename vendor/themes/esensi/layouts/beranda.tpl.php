@@ -18,34 +18,37 @@
         </div>
       </div>
     <?php endif; ?>
-    
+      
     <!-- Menu Box -->
     <?php $this->load->view($folder_themes . '/layouts/flexmenu'); ?>
 
     <!-- Category Title / Latest Articles -->
     <div class="card p-4 rounded-lg text-slate-500">
-      <div class="w-full my-5 text-center">
+      <div class="w-full my-5 text-center text-primary-100">
         <h3 class="text-h3 font-semibold cursor-pointer" onclick="window.location.href='<?= site_url('arsip') ?>'"><?= $title ?></h3>
       </div>
 
       <!-- Articles List -->
-      <div class="scrollable-article scrollbar-hidden overflow-auto max-h-80 my-1">
+      <div class="my-1 relative">
         <?php if ($artikel) : ?>
-          <?php foreach ($artikel as $post) : ?>
-            <?php $data['post'] = $post ?>
-            <div class="mb-4">
-              <?php $this->load->view($folder_themes . '/partials/article_list', $data) ?>
-            </div>
-          <?php endforeach ?>
+          <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <?php foreach ($artikel as $post) : ?>
+              <?php $data['post'] = $post ?>
+              <div>  
+                <?php $this->load->view($folder_themes . '/partials/article_list', $data) ?>
+              </div>
+            <?php endforeach ?>
+          </div>
         <?php else : ?>
           <?php $data['title'] = $title ?>
           <?php $this->load->view($folder_themes . '/partials/empty_article', $data) ?>
         <?php endif ?>
-      </div>
 
-      <!-- Pagination -->
-      <div class="pagination flex flex-wrap justify-center space-y-1 mt-4">
-        <?php $this->load->view($folder_themes . '/commons/paging', $data) ?>
+      
+        <!-- Pagination -->
+        <div class="pagination flex flex-wrap justify-center space-y-1 mt-4">
+          <?php $this->load->view($folder_themes . '/commons/paging', $data) ?>
+        </div>
       </div>
     </div>
 
@@ -66,27 +69,59 @@
         <?php endforeach; ?>
       </div>
     </div>
-    
-    <!-- Widgets Section (Statistics, Archive, Agenda) -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
-        <?php 
-        $widgets = [
-          ['isi' => 'statistik', 'judul' => 'Statistik', 'icon' => 'fa fa-chart-pie'],
-          ['isi' => 'arsip_artikel', 'judul' => 'Arsip', 'icon' => 'fas fa-folder-open'],
-          ['isi' => 'agenda', 'judul' => 'Agenda', 'icon' => 'fas fa-calendar-alt']
-        ];
-        foreach ($widgets as $widget): ?>
-          <div class="shadow rounded-lg bg-white p-4">
-            <h3 class="text-lg font-bold mb-3">
-              <i class="<?= $widget['icon'] ?> mr-1"></i>
-              <?= $widget['judul'] ?>
-            </h3>
-            <div>
-              <?php $this->load->view($folder_themes . '/widgets/' . $widget['isi']) ?>
-            </div>
-          </div>
-        <?php endforeach; ?>
+
+    <!-- Widgets Carousel Section -->
+    <div class="mt-5 relative group h-[400px]"> <!-- Added fixed height -->
+      <!-- Navigation Arrows -->
+      <div class="slider-nav">
+        <span class="slider-nav-prev px-1 py-2 cursor-pointer transition-all duration-300 bg-primary-100 shadow absolute top-1/2 left-0 transform -translate-y-1/2 z-[99]" title="Sebelumnya">
+          <i class="fas fa-chevron-left text-lg text-white px-3"></i>
+        </span>
+        <span class="slider-nav-next px-1 py-2 cursor-pointer transition-all duration-300 bg-primary-100 shadow absolute top-1/2 right-0 transform -translate-y-1/2 z-[99]" title="Selanjutnya">
+          <i class="fas fa-chevron-right text-lg text-white px-3"></i>
+        </span>
       </div>
+
+      <!-- Widgets Container -->
+      <div class="owl-carousel widget-carousel h-full z-1"> <!-- Added full height -->
+        <?php if ($w_cos): ?>
+          <?php foreach($w_cos as $widget) : ?>
+            <?php
+              $judul_widget = [
+                'judul_widget' => str_replace('Desa', ucwords($this->setting->sebutan_desa), strip_tags($widget['judul']))
+              ];
+            ?>
+            <div class="item h-full"> <!-- Added full height -->
+              <div class="shadow rounded-lg bg-white p-4 h-full flex flex-col"> <!-- Added flex column -->
+                <?php if ($widget["jenis_widget"] == 1): ?>
+                  <div class="h-full flex flex-col"> <!-- Added flex container -->
+                    <?php $this->load->view("{$folder_themes}/widgets/{$widget['isi']}", $judul_widget) ?>
+                  </div>
+                <?php elseif($widget['jenis_widget'] == 2) : ?>
+                  <div class="h-full flex flex-col"> <!-- Added flex container -->
+                    <?php $this->load->view("../../{$widget['isi']}", $judul_widget) ?>
+                  </div>
+                <?php else : ?>
+                  <div class="box-header">
+                    <h3 class="text-lg font-bold mb-3">
+                      <?php if(isset($widget['icon'])): ?>
+                        <i class="<?= $widget['icon'] ?> mr-5"></i>
+                      <?php endif; ?>
+                      <?= strip_tags($widget['judul']) ?>
+                    </h3>
+                  </div>
+                  <div class="box-body flex-grow overflow-auto"> <!-- Added flex-grow and overflow -->
+                    <?= htmlspecialchars_decode(html_entity_decode($widget['isi']), ENT_QUOTES) ?>
+                  </div>
+                <?php endif ?>
+              </div>
+            </div>
+            <?php if ($w_cos): ?>
+            <?php endif; ?>
+          <?php endforeach ?>
+        <?php endif ?>
+      </div>
+    </div>
       
     <!-- Village Staff Section -->
     <div class="mt-5 bg-white shadow rounded-lg overflow-hidden">
@@ -98,25 +133,22 @@
 </div>
 
 <style type="text/css">
-  .Artikel {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,208,1) 35%, rgba(0,212,255,1) 100%);
-  }
-  .Category-Article {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,24,208,1) 35%, rgba(0,212,255,1) 100%);
-  }
-  .scrollable-article {
-    max-height: 60vh; 
-    overflow-y: auto; 
-  }
-  .scrollbar-hidden::-webkit-scrollbar {
-    display: none; 
-  }
-  .scrollbar-hidden {
-    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
-    scrollbar-width: none;  /* Hide scrollbar for Firefox */
-  }
+  .widget-carousel .owl-stage-outer {
+  padding: 10px 0;
+}
+
+.widget-carousel .item {
+  height: 100%;
+}
+
+.widget-carousel .shadow {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.widget-carousel .shadow:hover {
+  transform: translateY(-5px);
+}
 </style>
 
 <script>
@@ -137,6 +169,35 @@
         items: 3
       }
     }
+    });
   });
-});
+
+  $(document).ready(function() {
+    $(".widget-carousel").owlCarousel({
+      loop: true,
+      margin: 16,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        640: {
+          items: 2
+        },
+        1024: {
+          items: 3
+        }
+      }
+    });
+
+    // Custom Navigation
+    $(".slider-nav-prev").click(function() {
+      $(".widget-carousel").trigger('prev.owl.carousel');
+    });
+
+    $(".slider-nav-next").click(function() {
+      $(".widget-carousel").trigger('next.owl.carousel');
+    });
+  });
 </script>

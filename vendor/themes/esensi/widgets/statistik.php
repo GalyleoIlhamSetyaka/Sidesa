@@ -72,6 +72,6 @@
         });
       });
     </script>
-    <div id="container_widget" style="width: 100%; height: 300px; margin: 0 auto"></div>
+    <div id="container_widget" style="width: 100%; height: 400px; margin: 0 auto"></div>
   </div>
 </div>

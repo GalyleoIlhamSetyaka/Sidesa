@@ -7143,6 +7143,7 @@ article .box>div:nth-child(2) .table-responsive table, article .box>div:nth-chil
   margin: 0 !important;
   border: none !important;
   padding: 0 !important;
+  height: fit-content !important;
 }
 
 .sliderx .owl-carousel {

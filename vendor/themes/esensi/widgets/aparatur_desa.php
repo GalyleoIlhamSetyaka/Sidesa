@@ -7,7 +7,7 @@
         <div class="item p-1 mt-10" style="height: auto; width: auto;">
           <div class="relative space-y-1">
             <div class="w-full">
-              <img src="<?= $data['foto'] ?>" alt="<?= $data['nama'] ?>" class="object-cover object-center bg-gray-300" style="height: 200px; width: 150px; margin-left: 110px; ">
+              <img src="<?= $data['foto'] ?>" alt="<?= $data['nama'] ?>" class="object-cover object-center bg-gray-300" style="height: 200px; width: 170px; margin: auto; ">
             </div>
             <?php if ($this->web_widget_model->get_setting('aparatur_desa', 'overlay') == true) : ?>
               <div class="space-y-1 text-sm text-center z-10">
@@ -44,7 +44,7 @@
       autoplayTimeout: 3000,
       autoplayHoverPause: true,
       loop: true,
-      margin: 10,
+      margin: 5,
       responsive: {
         0: {
           items: 1

@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="box">
+<div class="box" style="width: 100%; height: 400px; margin: 0 auto">
   <div class="box-body">
     <ul class="nav nav-tabs flex list-none border-b-10 pl-0 mb-4" id="tab-agenda" role="tablist">
       <?php if (count($hari_ini ?? []) > 0): ?>
@@ -73,7 +73,7 @@
       </div>
 
       <div id="lama" class="tab-pane fade <?php count(array_merge($hari_ini, $yad) ?? []) == 0 and print('show active')?>" role="tabpanel">
-        <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="230" align="center">
+        <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="2" direction="up" width="100%" height="350px" align="center">
           <?php foreach ($lama as $agenda): ?>
             <table class="w-full text-sm">
               <tr>

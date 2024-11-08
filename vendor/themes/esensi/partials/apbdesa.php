@@ -43,7 +43,7 @@
         <div class="text-center"><?= ($subdatas['laporan'])?></div>
       </h3>
       
-      <div class="text-center px-5 py-3 bg-white sticky top-[52px] z-10">
+      <div class="text-center px-5 py-3 bg-white sticky top-[52px] ">
         <span class="text-sm">Realisasi | Anggaran</span>
         <hr class="mt-2"/>
       </div>

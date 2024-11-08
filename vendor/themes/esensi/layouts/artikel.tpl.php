@@ -25,7 +25,7 @@
     <?php $this->load->view($folder_themes . '/commons/loading_screen') ?>
     <?php $this->load->view($folder_themes . '/commons/header') ?>
     
-    <div class="container mx-auto lg:px-5 px-3 flex flex-col lg:flex-row my-2 gap-3 lg:gap-5 justify-between text-gray-600">
+    <div class="container mx-auto lg:px-5 px-3 flex flex-col lg:flex-row my-2 gap-3 lg:gap-5 justify-between bg-primary-100">
       <main class="lg:w-full w-full overflow-hidden ">
           <div class="scrollable-article scrollbar-hidden"> <!-- Tambahkan kelas scrollbar-hidden -->
             <?php $this->load->view($folder_themes . '/partials/article'); ?>

@@ -1,5 +1,5 @@
 <div 
-  class="fixed bottom-0 mb-5 right-0 mr-5"
+  class="fixed bottom-0 mb-5 right-0 mr-5 z-99"
   x-data="{backTop: false}"
   @scroll.window="backTop = window.scrollY > document.querySelector('header').getBoundingClientRect().top + 800">
   <a 

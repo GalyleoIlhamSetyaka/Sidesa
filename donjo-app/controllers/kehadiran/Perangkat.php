@@ -82,7 +82,7 @@ class Perangkat extends Web_Controller
             'success'     => $this->session->kehadiran,
             'ip_address'  => $this->ip,
             'mac_address' => $this->mac,
-            'kehadiran'   => Kehadiran::where('tanggal', '=', $this->tgl)->where('pamong_id', '=', $this->session->masuk['pamong_id'])->where('status_kehadiran', '=', 'hadir')->first(),
+            'kehadiran'   => Kehadiran::where('tanggal', '=', $this->tgl)->where('pamong_id', '=', $this->session->masuk['pamong_id'])->where('status_kehadiran', '=', 'hadir', '1')->first(),
             'alasan'      => AlasanKeluar::get(),
         ];
 

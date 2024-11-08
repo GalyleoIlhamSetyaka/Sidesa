@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-<div class="box box-primary box-solid">
+<div class="box box-primary box-solid " style="width: 100%; height: 400px; margin: 0 auto">
   <div class="box-header">
     <h3 class="box-title"><i class="fa fa-comments mr-2 ml-1"></i><?= $judul_widget ?></h3>
   </div>
